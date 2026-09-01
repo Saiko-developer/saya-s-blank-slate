@@ -9,6 +9,7 @@ import { BookOpen, Languages, ListChecks } from "lucide-react";
 
 import { LessonAudioPlayer } from "@/components/LessonAudioPlayer";
 import {
+  AnswerTryBox,
   ExerciseGroup,
   OwlBadge,
   ParagraphBlock,

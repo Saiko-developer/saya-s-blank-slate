@@ -23,6 +23,7 @@ import { Unit6SkillView } from "@/components/lesson/Unit6SkillView";
 import { Unit7SkillView } from "@/components/lesson/Unit7SkillView";
 import { Unit8SkillView } from "@/components/lesson/Unit8SkillView";
 import { Unit9SkillView } from "@/components/lesson/Unit9SkillView";
+import { Unit11SkillView } from "@/components/lesson/Unit11SkillView";
 
 import { UNIT1_GRAMMAR } from "@/data/grammar/unit1";
 
