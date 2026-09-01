@@ -121,6 +121,27 @@ function ReadingView11() {
           </section>
         ) : null}
 
+        {comp?.part_A?.topics?.length ? (
+          <section className="rounded-2xl border border-border bg-card p-5">
+            <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
+              <ListChecks className="h-3.5 w-3.5" /> Topics (a–e)
+            </div>
+            <p className="mt-1 text-xs text-muted-foreground">
+              အကြောင်းအရာ ရွေးချယ်စရာများ — Choose one topic for each paragraph below.
+            </p>
+            <ul className="mt-3 space-y-1.5">
+              {comp.part_A.topics.map((t: string) => (
+                <li
+                  key={t}
+                  className="rounded-lg border border-border bg-background px-3 py-2 text-sm font-medium leading-relaxed"
+                >
+                  {t}
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
+
         {comp?.part_A?.exercises?.length ? (
           <ExerciseGroup
             title="Exercise A — Topic of each paragraph"
