@@ -49,6 +49,9 @@ export function UnitSkillView({ unit, skill }: { unit: number; skill: PracticeSk
   if (unit === 8) return <Unit8SkillView skill={skill} />;
   // Unit 9 reads only from textbookUnit9.json + unit9Supplement.ts + grammar/unit9.ts.
   if (unit === 9) return <Unit9SkillView skill={skill} />;
+  // Unit 11 reads only from textbookUnit11.json + unit11Supplement.ts + grammar/unit11.ts.
+  if (unit === 11) return <Unit11SkillView skill={skill} />;
+
 
 
   const supported = unit === 1;

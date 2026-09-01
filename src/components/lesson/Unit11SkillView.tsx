@@ -266,7 +266,7 @@ function VocabularyView11() {
                   <span className="text-sm font-bold text-primary">{q.question_number}.</span>
                   <p className="text-sm font-medium leading-relaxed">{q.text}</p>
                 </div>
-                <AnswerTryBoxLazy correct={q.answer ?? ""} placeholder="Type the collocation…" />
+                <AnswerTryBox correct={q.answer ?? ""} placeholder="Type the collocation…" />
               </li>
             ))}
           </ol>
@@ -275,10 +275,6 @@ function VocabularyView11() {
     </div>
   );
 }
-
-// Local wrapper so ExerciseKit's AnswerTryBox stays the single shared
-// input + Check/Reveal pattern.
-import { AnswerTryBox as AnswerTryBoxLazy } from "@/components/lesson/ExerciseKit";
 
 /* ------------------------------ Grammar (11C) ---------------------------- */
 
