@@ -25,6 +25,7 @@ import { Unit8SkillView } from "@/components/lesson/Unit8SkillView";
 import { Unit9SkillView } from "@/components/lesson/Unit9SkillView";
 import { Unit10SkillView } from "@/components/lesson/Unit10SkillView";
 import { Unit11SkillView } from "@/components/lesson/Unit11SkillView";
+import { Unit12SkillView } from "@/components/lesson/Unit12SkillView";
 
 import { UNIT1_GRAMMAR } from "@/data/grammar/unit1";
 
@@ -54,6 +55,8 @@ export function UnitSkillView({ unit, skill }: { unit: number; skill: PracticeSk
   if (unit === 10) return <Unit10SkillView skill={skill} />;
   // Unit 11 reads only from textbookUnit11.json + unit11Supplement.ts + grammar/unit11.ts.
   if (unit === 11) return <Unit11SkillView skill={skill} />;
+  // Unit 12 reads only from textbookUnit12.json + unit12Supplement.ts + grammar/unit12.ts.
+  if (unit === 12) return <Unit12SkillView skill={skill} />;
 
 
 
