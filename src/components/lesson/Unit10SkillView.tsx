@@ -11,7 +11,6 @@ import { LessonAudioPlayer } from "@/components/LessonAudioPlayer";
 import {
   ExerciseGroup,
   OwlBadge,
-  OwlBadge as Owl,
   ToggleReveal,
   VocabCard,
 } from "@/components/lesson/ExerciseKit";
@@ -32,7 +31,6 @@ import { getUnitAudio } from "@/lib/localData";
 import type { PracticeSkill } from "@/lib/practice";
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-void Owl;
 
 const UNIT10 = unit10 as any;
 
